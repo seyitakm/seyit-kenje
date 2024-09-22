@@ -11,8 +11,8 @@
                 "currentType":"1",
                 "params":{
                     "usertime":true,
-                    "tz":"3",
-                    "utc":1729296000000  // Время для 19 октября 2024 года
+                    "tz":"6",  // Bishkek Time (UTC+6)
+                    "utc":1729310400000  // Time for 19 October 2024, 18:00 Bishkek time
                 }
             },
             "design":{
