@@ -6644,11 +6644,35 @@
                     .t-input__vis-ph {
                     font-family: 'Georgia';
                   }
-                </style>
-                <div style="display: flex; justify-content: center;">
+                  .iframe-container {
+                    display: flex;
+                    justify-content: center;
+                  }
 
-                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScx6QUKmuRNyoOiQFdRf9dvn27reQpbDc4mrinl6tEcDCIU_Q/viewform?embedded=true" width="540" height="900" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+                  .iframe-container iframe {
+                    width: 540px; /* Фиксированная ширина для десктопов */
+                    height: 900px;
+                    border: none;
+                  }
+
+                  @media (max-width: 768px) {
+                    .iframe-container iframe {
+                      width: 100%; /* Адаптивная ширина для мобильных устройств */
+                      height: 600px;
+                    }
+                  }
+                </style>
+                <div class="iframe-container">
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScx6QUKmuRNyoOiQFdRf9dvn27reQpbDc4mrinl6tEcDCIU_Q/viewform?embedded=true"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                  >
+                    Загрузка…
+                  </iframe>
                 </div>
+
                 <!-- <form
                   class="t-form t-form_inputs-total_3 js-form-proccess"
                   id="form779128063"
