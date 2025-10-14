@@ -12,7 +12,7 @@
                 "params":{
                     "usertime":true,
                     "tz":"6",  // Bishkek Time (UTC+6)
-                    "utc":1729310400000  // Time for 19 October 2024, 18:00 Bishkek time
+                    "utc": 1762695600000  // 9 Nov 2025, 17:00 Bishkek time
                 }
             },
             "design":{
