@@ -56,14 +56,3 @@
     _h.appendChild(_t);
 }).call(this);
 
-window.addEventListener('load', function() {
-  // Ждём, пока таймер появится в DOM
-  setTimeout(function() {
-    document.querySelectorAll('.megacounts__text').forEach(el => {
-      if (el.innerText.includes('дней')) el.innerText = 'күн';
-      if (el.innerText.includes('часов')) el.innerText = 'саат';
-      if (el.innerText.includes('минут')) el.innerText = 'мүнөт';
-      if (el.innerText.includes('секунд')) el.innerText = 'секунд';
-    });
-  }, 1000);
-});
